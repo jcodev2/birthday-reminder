@@ -15,7 +15,7 @@
 /* **************** Custom Properties **************** */
 :root {
   --first-color: #f7f7f7;
-  --second-color: #333;
+  --second-color: #323232;
   --third-color: #fff;
 }
 :root {
@@ -37,11 +37,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #333;
-  background-color: #0070f3;
+  color: #323232;
+  background-color: #30475e;
 }
 
 /* ? Headers */
@@ -112,7 +112,6 @@ p {
 /* **************** Components **************** */
 /* ? Container */
 .container {
-  position: relative;
   width: 100%;
   min-height: 100vh;
   max-width: var(--max-width);
@@ -164,6 +163,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 400px;
   padding: 1rem;
@@ -171,25 +171,30 @@ p {
 }
 .card .user {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  width: 100%;
 }
 .card .user-info {
   width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .user .user-name {
   font-size: var(--step-0);
-  font-weight: 600;
+  font-weight: 400;
+  color: #323232;
 }
 .user .user-years {
   font-size: var(--step-0);
   font-weight: 400;
+  color: #323232;
 }
 .user .user-image {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -202,14 +207,28 @@ p {
   object-fit: cover;
 }
 
+.card .clear-button {
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #f05454;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-size: var(--step-0);
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .no-birthdays {
   font-size: var(--step-2);
   font-weight: 600;
-  color: #333;
+  color: #323232;
 }
 .birthdays {
   font-size: var(--step-1);
   font-weight: 600;
-  color: #333;
+  color: #323232;
   text-align: center;
 }
